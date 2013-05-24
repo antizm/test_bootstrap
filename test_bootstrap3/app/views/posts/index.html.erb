@@ -1,0 +1,143 @@
+<%- model_class = Post -%>
+
+
+<!-- Tab View -->
+<div id="tabs">
+  <ul>
+  <li><a href="#tabs-1">Hotels</a></li>
+  <li><a href="#tabs-2">Flights</a></li>
+  <li><a href="#tabs-3">Flights+Hotels</a></li>
+  <li><a href="#tabs-4">Random</a></li>
+  </ul>
+  
+  <div id="tabs-1">
+
+    <div>
+      <input type="text" id="example" value="Where?" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom"></input>
+      
+
+      Start: <input type="text" id="datepicker1" value="2013-05-15 Wed"/>
+      End: <input type="text" id="datepicker2" value="2013-05-22 Wed"/>
+
+      <div class="btn-group">
+      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      How Many?
+      <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+        <li><a href="#"> 1 man & 1 room </a></li>
+        <li><a href="#"> 2 man & 1 room </a></li>
+        <li><a href="#"> 2 man & 2 room ... </a></li>
+      </ul>
+      </div>
+
+      <input type="submit" value="Go!" />
+    </div>
+
+    <!-- Accordion View -->
+    <div id="accordion">
+      <h3>Flight #1</h3>
+        <div>
+        <p>
+        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        </p>
+        </div>
+      <h3>Flight #2</h3>
+        <div>
+        <p>
+        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+        suscipit faucibus urna.
+        </p>
+        </div>
+      <h3>Flight #3</h3>
+        <div>
+        <p>
+        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+        </p>
+        <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+        </ul>
+        </div>
+      <h3>Flight #4</h3>
+        <div>
+        <p>
+        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+        mauris vel est.
+        </p>
+        <p>
+        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos.
+        </p>
+        </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <div id="tabs-2">Features Page Content Goes Here
+
+  </div>
+
+
+  <div id="tabs-3">Comments Page Content Goes Here</div>
+  <div id="tabs-4">Screenshots Page Content Goes Here</div>
+
+</div>
+
+
+<!--
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= link_to post.id, post_path(post) %></td>
+        <td><%= post.title %></td>
+        <td><%= post.description %></td>
+        <td><%=l post.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_post_path(post), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      post_path(post),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_post_path,
+            :class => 'btn btn-primary' %>
+-->
