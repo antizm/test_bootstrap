@@ -37,9 +37,13 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-########################################
+###############################
 #
-# Added by warry (2013-05-10)
+# added by antizm (2013-05-13)
 #
-gem 'bootstrap-sass'
-gem 'simple_form'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+#gem 'rails-asset-jqueryui'
+gem 'jquery-ui-rails'
+

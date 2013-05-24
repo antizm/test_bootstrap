@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-TestBootstrap::Application.config.secret_token = 'b114ed5eb1620192be4f35bfb28a43b0a1d63786381d5c8761fd8d95a12a75e16ce45a4afe9ba43a93576677126b3d4da19b25c9843041c0f5fcf235e7036147'
+TestBootstrap::Application.config.secret_token = 'caa7008b1602d4b4aeb714d71af99d88fca05b6e99bfcd43df74f1cc841ad64e47d6643e28b67188a7b542abdcdfcf00e1c5d3a1bcf54037401e924df1792bdd'
