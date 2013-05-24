@@ -41,7 +41,7 @@ gem 'jquery-rails'
 #
 # added by antizm (2013-05-13)
 #
-gem 'therubyracer'
+gem 'therubyracer', '0.10.0'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 #gem 'rails-asset-jqueryui'

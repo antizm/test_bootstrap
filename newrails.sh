@@ -22,9 +22,9 @@ echo " Append bootstrap Gems to Gemfile"
 # gem "less-rails"
 # gem "twitter-bootstrap-rails"
 echo "======================="
-echo "gem \"therubyracer\"" >> Gemfile
-echo "gem \"less-rails\"" >> Gemfile
-echo "gem \"twitter-bootstrap-rails\"" >> Gemfile
+echo "gem 'therubyracer', '0.10.0'" >> Gemfile
+echo "gem 'less-rails'" >> Gemfile
+echo "gem 'twitter-bootstrap-rails'" >> Gemfile
 #vi Gemfile
 
 cd public
