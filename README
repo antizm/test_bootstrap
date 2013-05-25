@@ -1,0 +1,16 @@
+==================================
+Test Bootstrap for Ruby on Rails
+    by antizm
+    at 2013-05-24 Fri
+==================================
+
+[Folders]
+test_bootstrap  : bootstrap javascript test #1
+test_bootstrap0 : newrails.sh script test #1 (fluid)
+test_bootstrap1 : newrails.sh script test #2 (fixed)
+test_bootstrap2 : bootstrap javascript test #2 (old)
+test_bootstrap3 : search screen demo
+
+[Files]
+newrails.sh : test_bootstrap generator
+
