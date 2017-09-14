@@ -1,14 +1,25 @@
 @startuml
 
-skinparam defaultFontName Malgun Gothic
+' skinparam defaultFontName Malgun Gothic
+skinparam defaultFontName Dialog
+skinparam titleBorderRoundCorner 10
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Aqua
+skinparam noteFontSize 2
 
 !define SenmonName 오인 체포된 전문학교생
 !define CriminalName 범죄 중학생
 !define RakusatsuName 낙찰자
+!define TR_DATE %date[yyyy-MM-dd]%
+
+title 
+<font size=24>여중생 티켓 사기 사건</font>
+end title
 
 participant "SenmonName" as Senmon
 participant "CriminalName" as Criminal
-participant "여고생 등 2 명" as JK_2
+participant "여고생 2 명" as JK_2
 participant "티켓 판매 사이트" as TicketShop
 participant "RakusatsuName" as Rakusatsu
 
@@ -29,5 +40,11 @@ Senmon -> Rakusatsu : 티켓을 송부
 TicketShop <- Rakusatsu : 티켓 수령 확인
 Criminal -> TicketShop : 매출 출금 작업
 Criminal <- TicketShop : 매출을 "CriminalName"의 계좌에 입금
+
+right footer 
+
+source: https://gist.github.com/shunirr/2bd6a5a00b966e1e534b443790c68eda / tranlated by warry, TR_DATE
+endfooter
+
 
 @enduml
