@@ -1,28 +1,30 @@
 @startuml
 
-! define SenmonName 오인 체포 된 전문 학교생
-! define CriminalName 범죄 중학생
-! define RakusatsuName 낙찰자
+skinparam defaultFontName Malgun Gothic
 
-participant "SenmonName"as Senmon
-participant "CriminalName"as Criminal
-participant "여고생 등 2 명"as JK_2
-participant "티켓 판매 사이트"as TicketShop
-participant "RakusatsuName"as Rakusatsu
+!define SenmonName 오인 체포된 전문학교생
+!define CriminalName 범죄 중학생
+!define RakusatsuName 낙찰자
 
-Senmon -> Criminal : 티켓 80,000 엔에서 판매합니다
+participant "SenmonName" as Senmon
+participant "CriminalName" as Criminal
+participant "여고생 등 2 명" as JK_2
+participant "티켓 판매 사이트" as TicketShop
+participant "RakusatsuName" as Rakusatsu
+
+Senmon -> Criminal : 티켓 80,000 엔에 판매합니다
 Senmon <- Criminal : 삽니다
-Senmon -> Criminal : "SenmonName"계좌를 가르치는
+Senmon -> Criminal : "SenmonName"계좌를 알려줌
 Criminal -> JK_2 : 티켓 4 만엔에 판매합니다
 Criminal <- JK_2 : 삽니다
-Criminal -> JK_2 : "SenmonName"계좌를 가르치는
-JK_2 -> Senmon : 각각 4 만원 입금 ​​(총 8 만엔)
-Senmon -> Criminal : 티켓 송 부처를 가르쳐주세요
-Criminal -> TicketShop : 티켓을 60,000 엔으로 출품
+Criminal -> JK_2 : "SenmonName"계좌를 알려줌
+JK_2 -> Senmon : 각각 4 만엔 입금 ​​(총 8 만엔)
+Senmon -> Criminal : 티켓 송부처를 알려줌
+Criminal -> TicketShop : 티켓을 60,000 엔으로 올림
 TicketShop <- Rakusatsu : 구매
-Criminal -> TicketShop : "RakusatsuName"정보를 얻을
+Criminal -> TicketShop : "RakusatsuName"정보를 얻음
 Criminal <- TicketShop : "RakusatsuName"정보를 표시
-Senmon <- Criminal : "RakusatsuName"의 주소를 가르쳐
+Senmon <- Criminal : "RakusatsuName"의 주소를 알려줌
 Senmon -> Rakusatsu : 티켓을 송부
 TicketShop <- Rakusatsu : 티켓 수령 확인
 Criminal -> TicketShop : 매출 출금 작업
