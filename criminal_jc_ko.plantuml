@@ -1,0 +1,31 @@
+@startuml
+
+! define SenmonName 오인 체포 된 전문 학교생
+! define CriminalName 범죄 중학생
+! define RakusatsuName 낙찰자
+
+participant "SenmonName"as Senmon
+participant "CriminalName"as Criminal
+participant "여고생 등 2 명"as JK_2
+participant "티켓 판매 사이트"as TicketShop
+participant "RakusatsuName"as Rakusatsu
+
+Senmon -> Criminal : 티켓 80,000 엔에서 판매합니다
+Senmon <- Criminal : 삽니다
+Senmon -> Criminal : "SenmonName"계좌를 가르치는
+Criminal -> JK_2 : 티켓 4 만엔에 판매합니다
+Criminal <- JK_2 : 삽니다
+Criminal -> JK_2 : "SenmonName"계좌를 가르치는
+JK_2 -> Senmon : 각각 4 만원 입금 ​​(총 8 만엔)
+Senmon -> Criminal : 티켓 송 부처를 가르쳐주세요
+Criminal -> TicketShop : 티켓을 60,000 엔으로 출품
+TicketShop <- Rakusatsu : 구매
+Criminal -> TicketShop : "RakusatsuName"정보를 얻을
+Criminal <- TicketShop : "RakusatsuName"정보를 표시
+Senmon <- Criminal : "RakusatsuName"의 주소를 가르쳐
+Senmon -> Rakusatsu : 티켓을 송부
+TicketShop <- Rakusatsu : 티켓 수령 확인
+Criminal -> TicketShop : 매출 출금 작업
+Criminal <- TicketShop : 매출을 "CriminalName"의 계좌에 입금
+
+@enduml
